@@ -1,23 +1,19 @@
-import React, { useState } from 'react';
-import './style.css';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Counter from "./counter/counter";
+import Todo from "./todolist/todo";
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0);
-
-  const handleMinus = () => {setCount(count - 1)};
-  const handlePlus = () => {setCount(count + 1)};
-  const handleReset = () => {setCount(0)};
-
-  return (
-    <div className="App">
-      <div>
-      <h2>Counter:</h2>
-        <h1>{count}</h1>
-        <button className="minus" onClick={handleMinus}>- Minus</button>
-        <button className="plus" onClick={handlePlus}>+ Plus</button>
-      </div>
-    </div>
-  );
+export default function App() {
+    return (
+        <Router>
+            <div className="project">
+                <Link to="/counter"><button>Counter</button></Link>
+                <Link to="/todolist"><button>Todo List</button></Link>
+            </div>
+            <Routes>
+                <Route path="/counter" element={<Counter />} />
+                <Route path="/todolist" element={<Todo />} />
+            </Routes>
+        </Router>
+    );
 }
-
-export default App;

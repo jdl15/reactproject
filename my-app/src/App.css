@@ -1,0 +1,18 @@
+.project {
+    margin-top: 10px;
+}
+.project button {
+    background-color: #32a2ec;
+    border: 2px solid transparent;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 15px;
+    padding: 10px 25px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.05s ease-in-out;
+}
+
+.project button:hover {
+    background-color: #007ddc;
+}
