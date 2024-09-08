@@ -1,0 +1,14 @@
+button{
+    /* border: 1px solid #333; */
+    background-color: #dddddd;
+    margin-top: 2px;
+    margin-right: 2px;
+}
+
+button:hover{
+    background-color: #ffffff;
+}
+
+.span-two {
+    grid-column: span 2; /* Span two columns */
+}
