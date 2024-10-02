@@ -11,9 +11,6 @@ export default function App() {
                 <Link to="/counter"><button>Counter</button></Link>
                 <Link to="/todolist"><button>Todo List</button></Link>
                 <Link to="/basiccalculator"><button>Basic Calculator</button></Link>
-                <a href="https://jdl15.github.io/WebSample/" target="_blank" rel="noopener noreferrer">
-                    <button>HTML/CSS/JS Sample</button>
-                </a>
             </div>
             <Routes>
                 <Route path="/counter" element={<Counter />} />
